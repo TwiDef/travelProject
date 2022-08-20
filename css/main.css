@@ -141,3 +141,48 @@ body {
     position: relative;
     top: 1px;
 }
+
+
+/* Header content */
+
+.header__bange {
+    margin-bottom: 7px;
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+}
+
+.header__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.header__text {
+    margin-bottom: 68px;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__btn {
+    display: inline-block;
+    padding: 27px 48px;
+    font-weight: 25px;
+    font-weight: 600;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+}
+
+.header__btn:hover {
+    color: #112120;
+    transition: color 0.2s ease-in;
+}
+
+.header__btn:active {
+    position: relative;
+    top: 1px;
+}
