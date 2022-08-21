@@ -149,7 +149,7 @@ body {
     display: inline-block;
     padding: 13px 43px;
     font-size: 15px;
-    color: white;
+    color: #fff;
     font-weight: 500;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
     border-radius: 100px;
@@ -194,7 +194,7 @@ body {
 .header__btn {
     display: inline-block;
     padding: 27px 48px;
-    font-weight: 25px;
+    font-size: 25px;
     font-weight: 600;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
     border-radius: 27px;
@@ -230,4 +230,41 @@ body {
 .destinations__slider {
     width: 1110px;
     flex-shrink: 0;
+}
+
+.destinations__title {
+    font-weight: 600;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.destinations__title span {
+    font-size: 30px;
+}
+
+.destinations__text {
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.destinations__btn {
+    display: inline-block;
+    padding: 25px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+}
+
+.destinations__btn:hover {
+    color: #223f3d;
+    transition: color 0.2s ease-in;
+}
+
+.destinations__btn:active {
+    position: relative;
+    top: 1px;
 }
