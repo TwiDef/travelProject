@@ -317,3 +317,10 @@ body {
     justify-content: flex-end;
     right: -27px;
 }
+
+
+/* Customers */
+
+.customers {
+    margin-top: 100px;
+}
