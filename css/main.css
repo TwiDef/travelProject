@@ -268,3 +268,23 @@ body {
     position: relative;
     top: 1px;
 }
+
+
+/* Slider */
+
+.slider {}
+
+.slider__item {
+    margin-top: 27px;
+    width: 335px;
+    height: 402px;
+    object-fit: cover;
+    border-radius: 35px;
+    transition: 0.2s ease-in;
+}
+
+.slider .center .slider__item {
+    margin-top: 0;
+    width: 380px;
+    height: 456px;
+}
