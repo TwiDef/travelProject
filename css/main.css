@@ -272,7 +272,10 @@ body {
 
 /* Slider */
 
-.slider {}
+.slider {
+    position: relative;
+    height: 456px;
+}
 
 .slider__item {
     margin-top: 27px;
@@ -287,4 +290,30 @@ body {
     margin-top: 0;
     width: 380px;
     height: 456px;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    display: block;
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.slider__btn--prev {
+    padding-left: 26px;
+    justify-content: flex-start;
+    left: -27px;
+}
+
+.slider__btn--next {
+    padding-right: 26px;
+    justify-content: flex-end;
+    right: -27px;
 }
