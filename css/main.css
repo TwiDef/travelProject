@@ -4,6 +4,7 @@
     --container-width: 1270px;
     --container-padding: 15px;
     --secondary: rgba(15, 31, 28, 0.5);
+    --orange: #FF7C4E;
 }
 
 body {
@@ -121,6 +122,15 @@ body {
     bottom: -6px;
 }
 
+.nav__list.nav__list--footer a.active::after,
+.nav__list.nav__list--footer a:hover::after {
+    display: none;
+}
+
+.nav__list.nav__list--footer a.active .nav__list.nav__list--footer a:hover {
+    color: var(--orange);
+}
+
 .nav__login {
     font-size: 15px;
     font-weight: 500;
@@ -139,7 +149,11 @@ body {
 }
 
 .logo a {
-    color: inherit;
+    color: inherit !important;
+}
+
+.logo--footer {
+    color: var(--orange);
 }
 
 
@@ -528,4 +542,45 @@ body {
 .subscribe-form__btn:active {
     position: relative;
     top: 1px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 56px 0 74px;
+}
+
+.footer a {
+    color: var(--secondary);
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 13px 43px;
+    font-size: 15px;
+    color: #fff !important;
+    font-weight: 500;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    color: #223f3d !important;
+    transition: color 0.2s ease-in;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn--login {
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 13px 44px;
 }
