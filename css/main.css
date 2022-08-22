@@ -466,3 +466,66 @@ body {
     position: relative;
     top: 1px;
 }
+
+
+/* Subscribe */
+
+.subscribe {
+    padding: 35px 0 50px;
+}
+
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe__title {
+    max-width: 494px;
+    font-weight: 600;
+    font-size: 55px;
+    margin-bottom: 60px;
+}
+
+
+/* Subscribe-form */
+
+.subscribe-form {
+    padding: 12px 15px 12px 46px;
+    border-radius: 35px;
+    background-color: #fff;
+    display: flex;
+    column-gap: 20px;
+}
+
+.subscribe-form__input {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.subscribe-form__input::placeholder {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--secondary);
+}
+
+.subscribe-form__btn {
+    display: inline-block;
+    padding: 36px 86px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 35px;
+}
+
+.subscribe-form__btn:hover {
+    color: #223f3d;
+    transition: color 0.2s ease-in;
+}
+
+.subscribe-form__btn:active {
+    position: relative;
+    top: 1px;
+}
