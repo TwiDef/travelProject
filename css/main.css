@@ -395,4 +395,74 @@ body {
 }
 
 
-/* .review__rating {} */
+/* Cta */
+
+.cta {
+    padding: 100px 0;
+}
+
+.cta__plate {
+    position: relative;
+    background-color: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 580px;
+    padding: 40px 15px;
+}
+
+.cta__plate::before,
+.cta__plate::after {
+    position: absolute;
+    width: 63px;
+    height: 83px;
+    content: "";
+}
+
+.cta__plate::before {
+    left: 74px;
+    bottom: 56px;
+    background-image: url("./../img/cta/cta-el-01.svg");
+}
+
+.cta__plate::after {
+    top: 74px;
+    right: 80px;
+    background-image: url("./../img/cta/cta-el-02.svg");
+}
+
+.cta__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.cta__text {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.cta__btn {
+    display: inline-block;
+    padding: 25px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+}
+
+.cta__btn:hover {
+    color: #223f3d;
+    transition: color 0.2s ease-in;
+}
+
+.cta__btn:active {
+    position: relative;
+    top: 1px;
+}
