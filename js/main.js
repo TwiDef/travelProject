@@ -1,3 +1,4 @@
+// Carousel
 const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
@@ -13,4 +14,18 @@ $('.slider__btn--prev').click(function() {
 
 $('.slider__btn--next').click(function() {
     owl.trigger('next.owl.carousel');
+});
+
+
+// Nav icon
+/* document.querySelector('.menu-icon-wrapper').onclick = function() {
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+}; */
+
+
+let iconWrapper = document.querySelector('.menu-icon-wrapper');
+let menuIcon = document.querySelector('.menu-icon');
+
+iconWrapper.addEventListener('click', () => {
+    menuIcon.classList.toggle('menu-icon-active');
 });
