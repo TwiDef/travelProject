@@ -7,6 +7,12 @@
     --orange: #FF7C4E;
 }
 
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 15px #FF7B4E, 0 0 15px #FF584E;
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #E5E5E5;
@@ -188,6 +194,7 @@ body {
 .btn:hover {
     color: #223f3d;
     transition: color 0.2s ease-in;
+    animation: pulsate 1s ease-in-out;
 }
 
 .btn:active {
@@ -233,6 +240,7 @@ body {
 .header__btn:hover {
     color: #223f3d;
     transition: color 0.2s ease-in;
+    animation: pulsate 1s ease-in-out;
 }
 
 .header__btn:active {
@@ -292,6 +300,7 @@ body {
 .destinations__btn:hover {
     color: #223f3d;
     transition: color 0.2s ease-in;
+    animation: pulsate 1s ease-in-out;
 }
 
 .destinations__btn:active {
@@ -490,6 +499,7 @@ body {
 .cta__btn:hover {
     color: #223f3d;
     transition: color 0.2s ease-in;
+    animation: pulsate 1s ease-in-out;
 }
 
 .cta__btn:active {
@@ -553,6 +563,7 @@ body {
 .subscribe-form__btn:hover {
     color: #223f3d;
     transition: color 0.2s ease-in;
+    animation: pulsate 1s ease-in-out;
 }
 
 .subscribe-form__btn:active {
@@ -683,6 +694,11 @@ body {
     .nav__toggle {
         display: block;
     }
+    .no-scroll {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        /* !!! */
+    }
     .nav--mobile {
         position: fixed;
         left: 0;
@@ -706,6 +722,9 @@ body {
         row-gap: 40px;
         font-size: 22px;
     }
+    .nav--mobile .nav__list a:hover {
+        color: var(--orange);
+    }
     .nav--mobile .nav__list a:active::after,
     .nav--mobile .nav__list a:hover::after {
         display: none;
@@ -717,9 +736,59 @@ body {
         row-gap: 40px;
         font-size: 22px;
     }
+    .nav--mobile .nav__login a:hover {
+        color: #FF584E;
+    }
     .nav--mobile .nav__toggle {
         position: fixed;
         top: 50px;
         right: 50px;
+    }
+    .header__img img {
+        right: -235px;
+    }
+    .header__img::after {
+        right: -235px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        padding-top: 20px;
+    }
+    .header__top {
+        margin-bottom: 40px;
+    }
+    .header__row {
+        flex-direction: column;
+    }
+    .header__img {
+        right: -136px;
+    }
+    .header__img img {
+        position: static;
+        width: 70%;
+        height: auto;
+    }
+    .header__img::after {
+        right: 114px;
+        top: 106px;
+    }
+    .header__title {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .header__text {
+        max-width: 400px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .header__bange {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    .header__btn {
+        padding: 20px 30px;
+        font-size: 20px;
     }
 }
