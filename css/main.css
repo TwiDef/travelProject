@@ -684,6 +684,12 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .destinations__slider {
+        width: 900px;
+    }
+}
+
 @media (max-width: 1000px) {
     .nav__list {
         display: none;
@@ -750,11 +756,31 @@ body {
     .header__img::after {
         right: -235px;
     }
+    .destinations__slider {
+        width: 600px;
+    }
+    .slider {
+        height: 304px;
+    }
+    .slider .slider__item {
+        margin-top: 18px;
+        width: 223px;
+        height: 268px;
+    }
+    .slider .center .slider__item {
+        margin-top: 0;
+        width: 253px;
+        height: 304px;
+    }
 }
 
 @media (max-width: 850px) {
+    .container-right {
+        padding-right: 15px;
+    }
     .header {
         padding-top: 20px;
+        min-height: unset;
     }
     .header__top {
         margin-bottom: 40px;
@@ -763,7 +789,7 @@ body {
         flex-direction: column;
     }
     .header__img {
-        right: -136px;
+        right: -10px;
     }
     .header__img img {
         position: static;
@@ -771,7 +797,7 @@ body {
         height: auto;
     }
     .header__img::after {
-        right: 114px;
+        right: 12px;
         top: 106px;
     }
     .header__title {
@@ -790,5 +816,49 @@ body {
     .header__btn {
         padding: 20px 30px;
         font-size: 20px;
+    }
+    .destinations {
+        padding: 40px 0 50px;
+    }
+    .destinations__row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .destinations__slider {
+        width: 100%;
+    }
+    .slider__btn--prev {
+        left: -15px;
+    }
+    .slider__btn--next {
+        right: -15px;
+    }
+    .destinations__title {
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .destinations__title span {
+        display: block;
+    }
+    .destinations__text {
+        margin-bottom: 30px;
+    }
+    .destinations__btn {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 460px) {
+    .nav--mobile .nav__toggle {
+        top: 20px;
+        right: 15px;
+    }
+    .nav--mobile .nav__list {
+        row-gap: 36px;
+    }
+    .nav--mobile .nav__login {
+        row-gap: 30px;
     }
 }
