@@ -848,6 +848,43 @@ body {
         padding: 20px 30px;
         font-size: 18px;
     }
+    .customers {
+        padding: 50px 0 60px;
+    }
+    .customers__row {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .customers__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .review__client {
+        column-gap: 30px;
+        margin-bottom: 20px;
+    }
+    .review__client-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .review__client-descr-name {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    .review__client-descr-country {
+        font-size: 18px;
+    }
+    .review__text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .review__rating {
+        max-width: 200px;
+    }
+    .customers__img img {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 460px) {
