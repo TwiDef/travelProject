@@ -935,6 +935,10 @@ body {
     .subscribe-form__btn {
         padding: 20px 38px;
     }
+    .cta__plate::before,
+    .cta__plate::after {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -962,6 +966,10 @@ body {
         align-items: center;
         row-gap: 15px;
     }
+    .cta__plate::before,
+    .cta__plate::after {
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
@@ -977,5 +985,20 @@ body {
     }
     .nav--mobile .nav__login {
         row-gap: 30px;
+    }
+    .cta__title {
+        font-size: 30px;
+    }
+    .cta__text {
+        font-size: 19px;
+        text-align: center;
+    }
+    .cta__btn {
+        padding: 17px 34px;
+        font-size: 15px;
+    }
+    .cta__plate::before,
+    .cta__plate::after {
+        display: none;
     }
 }
