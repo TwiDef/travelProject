@@ -3,19 +3,20 @@ const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
     loop: true,
-    margin: 30,
-    startPosition: 1,
-    items: 3,
+    margin: 20,
+    startPosition: 0,
+    items: 1,
     responsive: {
-        850: {
-            startPosition: 1,
+        540: {
             items: 3,
+            startPosition: 1,
         },
         1000: {
             margin: 20,
             items: 3,
         },
         1200: {
+            items: 3,
             margin: 30,
         }
     }
